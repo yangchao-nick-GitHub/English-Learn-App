@@ -1,0 +1,134 @@
+.settings-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.settings-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.settings-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-text-primary, #1f2937);
+  margin: 0 0 0.5rem 0;
+}
+
+.settings-subtitle {
+  font-size: 1rem;
+  color: var(--color-text-secondary, #6b7280);
+  margin: 0;
+}
+
+.settings-container {
+  background: var(--color-bg-primary, #ffffff);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--color-border, #e5e7eb);
+}
+
+.settings-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--color-border, #e5e7eb);
+  background: var(--color-bg-secondary, #f3f4f6);
+}
+
+.settings-tab {
+  flex: 1;
+  padding: 1rem;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-secondary, #6b7280);
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.settings-tab-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.settings-tab:hover {
+  color: var(--color-text-primary, #1f2937);
+  background: var(--color-bg-primary, #ffffff);
+}
+
+.settings-tab.active {
+  color: var(--color-accent, #3b82f6);
+  border-bottom-color: var(--color-accent, #3b82f6);
+  background: var(--color-bg-primary, #ffffff);
+}
+
+.settings-content {
+  padding: 1.5rem;
+}
+
+.settings-content-wrapper {
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+/* 暗黑模式 */
+.dark .settings-title {
+  color: var(--color-text-primary-dark, #f9fafb);
+}
+
+.dark .settings-subtitle {
+  color: var(--color-text-secondary-dark, #9ca3af);
+}
+
+.dark .settings-container {
+  background: var(--color-bg-primary-dark, #1f2937);
+  border-color: var(--color-border-dark, #374151);
+}
+
+.dark .settings-tabs {
+  background: var(--color-bg-secondary-dark, #374151);
+  border-bottom-color: var(--color-border-dark, #374151);
+}
+
+.dark .settings-tab {
+  color: var(--color-text-secondary-dark, #9ca3af);
+}
+
+.dark .settings-tab:hover {
+  color: var(--color-text-primary-dark, #f9fafb);
+  background: var(--color-bg-primary-dark, #1f2937);
+}
+
+.dark .settings-tab.active {
+  color: var(--color-accent-dark, #60a5fa);
+  border-bottom-color: var(--color-accent-dark, #60a5fa);
+  background: var(--color-bg-primary-dark, #1f2937);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .settings-page {
+    padding: 1rem;
+  }
+
+  .settings-tabs {
+    flex-direction: column;
+  }
+
+  .settings-tab {
+    border-bottom: 1px solid var(--color-border, #e5e7eb);
+    border-left: 3px solid transparent;
+  }
+
+  .settings-tab.active {
+    border-bottom-color: var(--color-border, #e5e7eb);
+    border-left-color: var(--color-accent, #3b82f6);
+  }
+}

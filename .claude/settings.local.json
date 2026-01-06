@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(yarn start:*)",
+      "Bash(curl:*)",
+      "mcp__zai-mcp-server__analyze_image",
+      "Bash(yarn build:*)",
+      "Bash(yarn lint:*)",
+      "Bash(dir:*)",
+      "Bash(xcopy:*)",
+      "Bash(yarn add:*)",
+      "Bash(rm:*)",
+      "Bash(yarn install:*)",
+      "Bash(npx vite:*)",
+      "Bash(node:*)",
+      "Bash(if exist node_modules rmdir /s /q node_modules)",
+      "Bash(if exist .vite rmdir:*)",
+      "Bash(if exist yarn.lock del yarn.lock)"
+    ],
+    "deny": [],
+    "ask": [],
+    "additionalDirectories": ["C:\\Users\\yangchao\\Desktop\\English-Learn-App-main\\EnglishGrammar"]
+  }
+}
